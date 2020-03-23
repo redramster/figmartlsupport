@@ -1,0 +1,7 @@
+{
+  "name": "RTL support",
+  "id": "739739050044773150",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html"
+}

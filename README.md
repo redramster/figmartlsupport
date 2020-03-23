@@ -1,22 +1,38 @@
-This plugin template uses Typescript. If you are familiar with Javascript, Typescript will
-look very familiar. In fact, valid Javascript code is already valid Typescript code.
+Flip RTL languages like hebrew and arabic.
+Can deal with mixed content and will adjust font and textbox size so you can understand wrapping.
 
-Typescript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
+Instructions:
 
-For more information, visit https://www.typescriptlang.org/
+1. Select a text layer
+2. Run the plugin
+3. Edit the text, text will change as you type
+**** new *****
+4. You can select any other text field on stage and edit it as you wish. 
+5. If you resize the field, the text will keep its original wrapping. use the refresh button to sort the wrapping again
 
-Using Typescript requires a compiler to convert Typescript (code.ts) into Javascript (code.js)
-for the browser to run.
+Have fun. Hopefully this will get Figma to support this from the properties window....
+-----------------------------------
 
-To get the TypeScript compiler working:
+Version Updates
 
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Install the TypeScript compiler globally: `sudo npm install -g typescript`.
-3. Open this directory in Visual Studio Code.
-4. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "tsc: watch - tsconfig.json". You will have to do this again every time
-    you reopen Visual Studio Code.
+Version 6 on March 20, 2020
+1. added support for autosize text (you can start a text field and open the plugin, it will give an auto size of 200px)
+2. added support for text alignment
 
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+Version 5 on January 31, 2020
+fixed problem when non text nodes are selected
+
+Version 4 on January 31, 2020
+Enabled the option to open the plugin with no text node selecterd
+
+Version 3 on August 11, 2019
+1. Added multiple fields editing in single plugin run - just select any field and text in the box will update (as well as its width
+2. Added fix wrapping functionality when resizing the fields
+3. Fixed some minor display bugs
+
+Version 2 on August 9, 2019
+1) added support to pasting large amounts of texts from the plugin. this enables designers to copy from a document directly into figma and get well wrapped texts
+2) added auto wrapping calculations
+3. fixed display bug when pasting large amount of texts. now, the text area will scroll
+
+Version 1 on August 7, 2019
